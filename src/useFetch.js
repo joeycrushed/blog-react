@@ -24,7 +24,6 @@ const useFetch = (url) => {
                 if (error.name === 'AbortError') {
                     console.log('fetch aborted')
                 } else {
-                    alert("SYSTEM FAILLLUURREEE! GET OUT OF THERE!!!")
                     setIsPending(false)
                     setError(error.message)    
                 }         
